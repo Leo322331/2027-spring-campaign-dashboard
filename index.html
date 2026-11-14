@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>桂北区域｜2027 春战经营测算</title>
+  <style>
+    :root{--navy:#17324d;--navy-2:#214764;--ink:#152536;--slate:#5f6f80;--muted:#8493a3;--line:#dfe6ee;--paper:#fff;--canvas:#edf2f6;--teal:#0f766e;--teal-soft:#dff4ef;--amber:#c66a12;--amber-soft:#fff1d8;--red:#b42318;--red-soft:#fdecea;--shadow:0 16px 40px rgba(23,50,77,.09);--radius:18px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,rgba(15,118,110,.1),transparent 26rem),radial-gradient(circle at 98% 18%,rgba(198,106,18,.08),transparent 24rem),var(--canvas);-webkit-font-smoothing:antialiased}
+    a{color:inherit}button,input,select{font:inherit}
+    .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(130deg,rgba(255,255,255,.06) 0 1px,transparent 1px 100%),linear-gradient(145deg,#10273b,#173b58 58%,#0d5f59 130%);background-size:38px 38px,auto}
+    .hero::after{content:"";position:absolute;width:420px;height:420px;right:-170px;top:-230px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 60px rgba(255,255,255,.035),0 0 0 130px rgba(255,255,255,.02)}
+    .hero-inner{position:relative;z-index:1;max-width:1420px;margin:0 auto;padding:34px 28px 30px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#cfe1ea;font-size:12px;letter-spacing:.15em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:23px;height:2px;background:#66d1c6}
+    h1{margin:12px 0 8px;font-size:clamp(30px,4vw,52px);line-height:1.08;letter-spacing:-.035em;font-weight:800}
+    .hero-copy{margin:0;max-width:820px;color:#dce8ef;line-height:1.8;font-size:14px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .meta-pill{padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.07);color:#f4f8fa;font-size:12px;backdrop-filter:blur(8px)}
+    .download-link{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#fff;color:var(--navy);text-decoration:none;font-weight:700;font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .wrap{max-width:1420px;margin:0 auto;padding:22px 28px 54px}
+    main.wrap{display:flex;flex-direction:column}.kpi-grid{order:1}#exec{order:2}#scenario{order:3}#ownership{order:4}#policy{order:5}#customers{order:6}#sources{order:7}
+    .kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:-3px}
+    .kpi{min-width:0;padding:20px 21px 18px;border-radius:var(--radius);background:var(--paper);border:1px solid rgba(23,50,77,.08);box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .kpi::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--accent,var(--teal))}
+    .kpi-label{color:var(--slate);font-size:12px;font-weight:600;line-height:1.4}
+    .kpi-value{margin-top:9px;font-size:clamp(26px,3vw,38px);line-height:1;letter-spacing:-.04em;font-weight:800;color:var(--navy);white-space:nowrap}
+    .kpi-unit{margin-left:5px;font-size:13px;letter-spacing:0;color:var(--slate);font-weight:500}
+    .kpi-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.5}
+    .section{margin-top:18px;padding:22px;border-radius:var(--radius);background:var(--paper);border:1px solid rgba(23,50,77,.08);box-shadow:var(--shadow)}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:18px}
+    .section-kicker{color:var(--teal);font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    h2{margin:5px 0 0;font-size:21px;letter-spacing:-.02em}
+    .section-desc{margin:6px 0 0;color:var(--slate);font-size:12px;line-height:1.7}
+    .verdict{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}
+    .verdict.ok{color:var(--teal);background:var(--teal-soft)}.verdict.warn{color:var(--red);background:var(--red-soft)}
+    .insight-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.insights{display:grid;gap:10px}
+    .insight{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:14px;border-radius:14px;background:#f7f9fb;border:1px solid #edf1f5}
+    .insight-no{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--navy);color:#fff;font-weight:800;font-size:12px}
+    .insight strong{display:block;font-size:13px;margin-bottom:4px}.insight p{margin:0;color:var(--slate);font-size:12px;line-height:1.7}
+    .verdict-panel{padding:18px;border-radius:15px;background:linear-gradient(145deg,#f6fbfa,#eef7f5);border:1px solid #cfe8e3}
+    .verdict-panel h3{margin:0 0 6px;font-size:15px}.verdict-panel p{margin:0;color:var(--slate);font-size:12px;line-height:1.75}
+    .big-status{margin:16px 0 8px;color:var(--teal);font-size:34px;font-weight:800;letter-spacing:-.04em}.mini-divider{height:1px;background:#d9ebe7;margin:16px 0}
+    .charts-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    .chart-card{padding:18px;border-radius:15px;border:1px solid var(--line);background:#fbfcfe;min-width:0}
+    .chart-title{margin:0 0 3px;font-size:15px;font-weight:800}.chart-sub{margin:0 0 14px;color:var(--slate);font-size:11px}
+    .chart-svg{display:block;width:100%;height:auto;overflow:visible}.chart-svg text{font-family:inherit}
+    .basis-list{display:grid;gap:12px;margin-top:18px}.basis{padding:14px;border-radius:13px;border:1px solid var(--line);background:#fff}
+    .basis-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.basis-name{font-weight:800;font-size:13px}.basis-rate{font-weight:800;font-size:18px}
+    .basis-rate.ok{color:var(--teal)}.basis-rate.warn{color:var(--red)}
+    .basis-track{position:relative;height:9px;border-radius:999px;background:#e8edf2;margin:11px 0 8px;overflow:hidden}
+    .basis-fill{height:100%;border-radius:inherit;background:var(--teal)}.basis-fill.warn{background:var(--red)}
+    .basis-cap{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--navy)}
+    .basis-meta{display:flex;justify-content:space-between;gap:10px;color:var(--slate);font-size:10px}
+    .month-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+    .month-card{padding:16px;border-radius:14px;background:#f7f9fb;border:1px solid var(--line)}
+    .month-card.floor{background:var(--amber-soft);border-color:#f0cf98}.month-card.spring{background:var(--teal-soft);border-color:#b9e1da}
+    .month-name{color:var(--slate);font-size:11px;font-weight:700}.month-value{margin-top:7px;font-size:25px;font-weight:800;color:var(--navy);letter-spacing:-.03em}
+    .month-desc{margin-top:7px;color:var(--slate);font-size:11px;line-height:1.6}
+    .manager-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .manager-card{padding:18px;border-radius:15px;border:1px solid var(--line);background:linear-gradient(145deg,#fff,#f8fafc)}
+    .manager-head{display:flex;align-items:center;justify-content:space-between;gap:10px}.avatar{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800}
+    .manager-name{font-size:15px;font-weight:800}.manager-share{color:var(--teal);background:var(--teal-soft);padding:5px 8px;border-radius:999px;font-size:11px;font-weight:700}
+    .manager-values{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}.m-val{padding:10px 8px;background:#f5f7fa;border-radius:10px;text-align:center}
+    .m-val b{display:block;color:var(--navy);font-size:14px}.m-val span{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.4}
+    .assumptions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.assumption{padding:15px;border-radius:13px;background:#f8fafc;border:1px solid var(--line)}
+    .assumption span{color:var(--muted);font-size:10px}.assumption strong{display:block;margin-top:5px;font-size:14px;color:var(--navy)}
+    .filters{display:grid;grid-template-columns:1.5fr .8fr .8fr .8fr;gap:10px;margin-bottom:12px}.field label{display:block;margin-bottom:5px;color:var(--slate);font-size:10px;font-weight:700}
+    .field input,.field select{width:100%;height:38px;border:1px solid #d6dfe8;border-radius:10px;padding:0 11px;color:var(--ink);background:#fff;outline:none}
+    .field input:focus,.field select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,118,110,.11)}
+    .table-meta{display:flex;justify-content:space-between;gap:10px;color:var(--slate);font-size:11px;margin:5px 0 10px}
+    .table-shell{overflow:auto;border:1px solid var(--line);border-radius:13px;max-height:620px}
+    table{width:100%;border-collapse:separate;border-spacing:0;min-width:1050px;font-size:11px}
+    thead th{position:sticky;top:0;z-index:2;text-align:left;padding:11px 10px;color:#fff;background:var(--navy);font-weight:700;white-space:nowrap}
+    tbody td{padding:10px;border-bottom:1px solid #edf1f5;color:#334155;white-space:nowrap}tbody tr:hover{background:#f5faf9}tbody tr:last-child td{border-bottom:0}
+    td.name{font-weight:700;color:var(--navy)}td.note{max-width:280px;overflow:hidden;text-overflow:ellipsis;color:var(--slate)}
+    .tag{display:inline-flex;padding:4px 7px;border-radius:999px;background:var(--teal-soft);color:var(--teal);font-size:10px;font-weight:700}
+    .tag.muted{background:#eef2f6;color:var(--slate)}.tag.fee{background:var(--amber-soft);color:var(--amber)}
+    .source-box{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.source-note{padding:18px;border-radius:14px;background:#f7f9fb;border:1px solid var(--line)}
+    .source-note h3{margin:0 0 9px;font-size:14px}.source-note p{margin:5px 0;color:var(--slate);font-size:11px;line-height:1.7}
+    .check-list{display:grid;gap:8px}.check{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:11px}.check b{color:var(--teal)}
+    footer{max-width:1420px;margin:0 auto;padding:0 28px 42px;color:var(--muted);font-size:10px;line-height:1.8}
+    .toast{position:fixed;right:20px;bottom:20px;padding:10px 14px;border-radius:10px;color:#fff;background:var(--navy);font-size:12px;box-shadow:0 10px 30px rgba(0,0,0,.18);opacity:0;transform:translateY(8px);pointer-events:none;transition:.22s ease}.toast.show{opacity:1;transform:translateY(0)}
+    @media(max-width:1050px){.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.insight-grid,.charts-grid{grid-template-columns:1fr}.assumptions{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr}}
+    @media(max-width:680px){.hero-inner,.wrap{padding-left:15px;padding-right:15px}.hero-inner{padding-top:25px}.wrap{padding-top:14px}.kpi-grid,.month-grid,.manager-grid,.assumptions,.source-box{grid-template-columns:1fr}.kpi{padding:17px}.kpi-value{font-size:31px}.section{padding:16px;border-radius:15px}.section-head{align-items:flex-start;flex-direction:column}.manager-values{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr}.table-shell{max-height:540px}.table-meta{align-items:flex-start;flex-direction:column}footer{padding-left:15px;padding-right:15px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">2027 Spring Campaign · Guibei</div>
+      <h1>桂北区域｜2027 春战经营测算</h1>
+      <p class="hero-copy">以 B 方案固定口径：12—1 月先完成春战分配任务 100%，2 月以 186 万保底、370 万冲刺。费用同时呈现“任务基数”和“80% 实际出库基数”两套判定。</p>
+      <div class="hero-meta">
+        <span class="meta-pill">口径确认版 · 2026-11-14</span>
+        <span class="meta-pill">年度任务 2,357 万</span>
+        <span class="meta-pill">回款截止 2026-12-31</span>
+        <a class="download-link" href="./2027春战政策测算与看板.xlsx" download>↓ 下载测算 Excel</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="kpi-grid" aria-label="核心指标">
+      <article class="kpi" style="--accent:var(--navy)">
+        <div class="kpi-label">春战任务</div>
+        <div class="kpi-value">920<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">年度任务 2,357 万，春战占 39.03%</div>
+      </article>
+      <article class="kpi" style="--accent:var(--teal)">
+        <div class="kpi-label">80% 出库目标</div>
+        <div class="kpi-value">736<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">按春战任务 920 万 × 80%</div>
+      </article>
+      <article class="kpi" style="--accent:var(--amber)">
+        <div class="kpi-label">12—1 月硬任务</div>
+        <div class="kpi-value">550<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">12 月 150 万 + 1 月 400 万</div>
+      </article>
+      <article class="kpi" style="--accent:var(--red)">
+        <div class="kpi-label">2 月保底任务</div>
+        <div class="kpi-value">186<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">占 2 月分配 370 万的 50.27%</div>
+      </article>
+      <article class="kpi" style="--accent:var(--navy)">
+        <div class="kpi-label">基础费用合计</div>
+        <div class="kpi-value">49.7504<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">5% 返利 46 万 + 赠品成本 3.7504 万</div>
+      </article>
+      <article class="kpi" style="--accent:var(--teal)">
+        <div class="kpi-label">任务基数费用率</div>
+        <div class="kpi-value">5.4077<span class="kpi-unit">%</span></div>
+        <div class="kpi-note">按 920 万任务基数，6% 上限内</div>
+      </article>
+      <article class="kpi" style="--accent:var(--red)">
+        <div class="kpi-label">80% 基数费用率</div>
+        <div class="kpi-value">6.7596<span class="kpi-unit">%</span></div>
+        <div class="kpi-note">按 736 万实际出库基数，压力口径</div>
+      </article>
+      <article class="kpi" style="--accent:var(--amber)">
+        <div class="kpi-label">守住 6% 的最低出库</div>
+        <div class="kpi-value">829.1733<span class="kpi-unit">万元</span></div>
+        <div class="kpi-note">占春战任务 90.13%</div>
+      </article>
+    </section>
+
+    <section class="section" id="customers">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Customer Plan</div>
+          <h2>客户任务与个性化分案</h2>
+          <p class="section-desc">可按销售经理、客户属性、参与状态和客户名称筛选。赠品成本采用物料表实际成本，不采用原客户文本中的“赠品额度”。</p>
+        </div>
+        <span class="verdict warn">基础 5% 费用池不含个性化特批</span>
+      </div>
+      <div class="filters">
+        <div class="field"><label for="search">搜索客户</label><input id="search" type="search" placeholder="输入客户名称"></div>
+        <div class="field"><label for="manager">销售经理</label><select id="manager"><option value="">全部</option><option>吴伟达</option><option>龙碧霞</option><option>/</option></select></div>
+        <div class="field"><label for="type">客户属性</label><select id="type"><option value="">全部</option><option>流通</option><option>商超</option><option>线上分销</option><option>自采</option><option>一件代发</option><option>/</option></select></div>
+        <div class="field"><label for="status">参与状态</label><select id="status"><option value="">全部</option><option>参与春战</option><option>不参与</option><option>费用归集</option></select></div>
+      </div>
+      <div class="table-meta">
+        <span id="rowCount">显示 0 户</span>
+        <span id="filterSum">筛选合计：任务 0 万 · 赠品 ¥0</span>
+      </div>
+      <div class="table-shell">
+        <table>
+          <thead><tr><th>销售经理</th><th>客户名称</th><th>属性</th><th>春战任务</th><th>12月分配</th><th>1月分配</th><th>2月分配</th><th>80%任务</th><th>赠品成本</th><th>其他附加</th><th>状态</th><th>备注</th></tr></thead>
+          <tbody id="customerBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Audit & Sources</div>
+          <h2>数据来源与校验</h2>
+          <p class="section-desc">计算底稿随网页一并提供下载；本页只呈现管理层需要查看的关键结论。</p>
+        </div>
+      </div>
+      <div class="source-box">
+        <div class="source-note">
+          <h3>来源</h3>
+          <p><strong style="color:var(--navy)">桂北2027年春战政策表格11.14.xlsx</strong></p>
+          <p>客户任务明细、销售人员任务、春战政策方案及春战市场物料方案。</p>
+          <p>业绩按销售出库减退货、按销售出库／销售退货单据时间计算。</p>
+          <p>客户政策文字中的“12 月 20 日前”已按最终确认统一改为 2026-12-31。</p>
+        </div>
+        <div class="check-list">
+          <div class="check"><span>春战任务合计</span><b>920 万 · 通过</b></div>
+          <div class="check"><span>月度春战分配</span><b>150 / 400 / 370 · 通过</b></div>
+          <div class="check"><span>赠品物料成本</span><b>¥37,504 · 通过</b></div>
+          <div class="check"><span>客户 80% 任务合计</span><b>736 万 · 通过</b></div>
+          <div class="check"><span>模型状态</span><b>PASS</b></div>
+        </div>
+      </div>
+    </section>
+
+  <script>
+    const rows = [
+      {s:"吴伟达",n:"柳州市汪佳食品有限公司",t:"流通",task:200,d:30,jan:85,f:85,gift:12800,extra:0,p:"参与春战",note:"赠品成本按物料表实际金额"},
+      {s:"吴伟达",n:"柳州市吉彩商贸有限责任公司",t:"商超",task:180,d:26,jan:75,f:79,gift:5800,extra:16500,p:"参与春战",note:"门店激励 16,500 元单列，未混入基础 5% 费用池"},
+      {s:"吴伟达",n:"柳州市柳南区超利食品店",t:"流通",task:170,d:26,jan:75,f:69,gift:11360,extra:0,p:"参与春战",note:"赠品成本按物料表实际金额"},
+      {s:"吴伟达",n:"柳州市春日网络科技有限公司",t:"线上分销",task:120,d:20.4,jan:50,f:49.6,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"吴伟达",n:"广西柳州市螺大叔网络科技有限公司",t:"线上分销",task:62,d:10,jan:26.6,f:25.4,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"吴伟达",n:"柳州市壮品故香贸易有限公司",t:"流通",task:20,d:4,jan:10,f:6,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"吴伟达",n:"来宾市众勤商贸有限公司",t:"流通",task:8,d:1.5,jan:4,f:2.5,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"吴伟达",n:"柳州市同喜贸易有限责任公司",t:"流通",task:8,d:1.5,jan:4,f:2.5,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"吴伟达",n:"柳州市后天商贸有限责任公司",t:"流通",task:12,d:2.4,jan:5,f:4.6,gift:0,extra:0,p:"参与春战",note:"有春战分配，年内暂无销量"},
+      {s:"吴伟达",n:"柳州市金桓商贸有限公司",t:"自采",task:6,d:1.2,jan:3.6,f:1.2,gift:0,extra:0,p:"参与春战",note:"自采客户"},
+      {s:"龙碧霞",n:"广西惠兴达供应链有限公司",t:"自采",task:20,d:4,jan:8,f:8,gift:960,extra:0,p:"参与春战",note:"赠品成本按物料表实际金额"},
+      {s:"龙碧霞",n:"桂林市金羽食品有限公司",t:"商超",task:16,d:4,jan:7,f:5,gift:1294,extra:0,p:"参与春战",note:"赠品成本按物料表实际金额"},
+      {s:"龙碧霞",n:"河池市金钰商贸有限公司",t:"商超",task:16,d:3,jan:5,f:8,gift:800,extra:0,p:"参与春战",note:"赠品成本按物料表实际金额"},
+      {s:"龙碧霞",n:"梧州市长洲区丰豪商行",t:"线上分销",task:10,d:1.5,jan:2,f:6.5,gift:0,extra:0,p:"参与春战",note:"回款 3%，截止 12 月 31 日"},
+      {s:"龙碧霞",n:"广西贺州市长鑫贸易有限公司",t:"商超",task:9,d:1.5,jan:2,f:5.5,gift:800,extra:0,p:"参与春战",note:"春战新户头：贺州市新鑫健源食品有限公司"},
+      {s:"吴伟达",n:"新开客户",t:"/",task:56,d:11.2,jan:34.4,f:10.4,gift:0,extra:0,p:"参与春战",note:"春战期间新开客户分配"},
+      {s:"吴伟达",n:"广西柳州新美茶业有限公司",t:"流通",task:2.8,d:1,jan:.8,f:1,gift:0,extra:0,p:"不参与",note:"销量计入部门及销售经理春战达成"},
+      {s:"吴伟达",n:"柳州科顿商贸有限公司",t:"流通",task:3,d:.8,jan:1.6,f:.6,gift:0,extra:0,p:"不参与",note:"销量计入部门及销售经理春战达成"},
+      {s:"龙碧霞",n:"广西梧州市恒佳兆商贸有限公司",t:"流通",task:1.2,d:0,jan:1,f:.2,gift:0,extra:0,p:"不参与",note:"销量计入部门及销售经理春战达成"},
+      {s:"吴伟达",n:"广西武宣双姐食品有限公司",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"销量计入部门及销售经理春战达成"},
+      {s:"吴伟达",n:"来宾市兴宾区甜客家超市",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"销量计入部门及销售经理春战达成"},
+      {s:"吴伟达",n:"中合三农（广西）商贸有限公司",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"年度分配有任务，已停止交易"},
+      {s:"吴伟达",n:"广西唐熙超市有限责任公司",t:"商超",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"年度分配有任务，已停止交易"},
+      {s:"吴伟达",n:"广西凤野生态农业发展有限公司",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"年度分配有任务，已停止交易"},
+      {s:"吴伟达",n:"柳城县孔姐土特产商行",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"年度分配有任务，已停止交易"},
+      {s:"龙碧霞",n:"广西华星商贸有限公司",t:"商超",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"停止交易"},
+      {s:"吴伟达",n:"广西仕高贸易有限公司",t:"流通",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"停止交易"},
+      {s:"吴伟达",n:"柳州诺邦贸易有限公司",t:"一件代发",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"一件代发"},
+      {s:"吴伟达",n:"柳州市柳北区好吃吖食品店",t:"一件代发",task:0,d:0,jan:0,f:0,gift:0,extra:0,p:"不参与",note:"一件代发"},
+      {s:"/",n:"其它小客户（物料表归集）",t:"/",task:0,d:0,jan:0,f:0,gift:3690,extra:0,p:"费用归集",note:"无具体客户拆分，按物料表保留"}
+    ];
+
+    const $ = (selector) => document.querySelector(selector);
+    const num = (value) => Number(value || 0).toLocaleString("zh-CN", { maximumFractionDigits: 2 });
+    const money = (value) => Number(value || 0) ? `¥${Number(value).toLocaleString("zh-CN")}` : "—";
+    const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+
+    function renderCustomers() {
+      const keyword = $("#search").value.trim().toLowerCase();
+      const manager = $("#manager").value;
+      const type = $("#type").value;
+      const status = $("#status").value;
+      const filtered = rows.filter((row) =>
+        (!keyword || row.n.toLowerCase().includes(keyword)) &&
+        (!manager || row.s === manager) &&
+        (!type || row.t === type) &&
+        (!status || row.p === status)
+      );
+      const taskSum = filtered.reduce((sum, row) => sum + row.task, 0);
+      const giftSum = filtered.reduce((sum, row) => sum + row.gift, 0);
+      $("#rowCount").textContent = `显示 ${filtered.length} 户 / 共 ${rows.length} 条记录`;
+      $("#filterSum").textContent = `筛选合计：任务 ${num(taskSum)} 万 · 赠品 ${money(giftSum)}`;
+      $("#customerBody").innerHTML = filtered.length ? filtered.map((row) => `
+        <tr>
+          <td>${escapeHtml(row.s)}</td>
+          <td class="name">${escapeHtml(row.n)}</td>
+          <td>${escapeHtml(row.t)}</td>
+          <td>${num(row.task)}</td>
+          <td>${num(row.d)}</td>
+          <td>${num(row.jan)}</td>
+          <td>${num(row.f)}</td>
+          <td>${num(row.task * .8)}</td>
+          <td>${money(row.gift)}</td>
+          <td>${money(row.extra)}</td>
+          <td><span class="tag ${row.p === "参与春战" ? "" : row.p === "费用归集" ? "fee" : "muted"}">${escapeHtml(row.p)}</span></td>
+          <td class="note" title="${escapeHtml(row.note)}">${escapeHtml(row.note)}</td>
+        </tr>`).join("") : `<tr><td colspan="12" style="text-align:center;padding:34px;color:#8493a3">没有符合筛选条件的客户</td></tr>`;
+    }
+
+    ["search", "manager", "type", "status"].forEach((id) => {
+      document.getElementById(id).addEventListener(id === "search" ? "input" : "change", renderCustomers);
+    });
+    renderCustomers();
+  </script>
+
+    <section class="section" id="scenario">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Scenario Path</div>
+          <h2>B 方案：先锁定 550 万，再保底冲 736 万</h2>
+          <p class="section-desc">12—1 月按春战分配任务全额完成；2 月保底只需完成 186 万即可触达整体 80%，继续做到 370 万可完成 100%。</p>
+        </div>
+        <span class="verdict ok">建议采用 B 方案</span>
+      </div>
+      <div class="month-grid">
+        <article class="month-card">
+          <div class="month-name">2026 年 12 月</div>
+          <div class="month-value">150 万</div>
+          <div class="month-desc">春战分配任务，要求先完成 100%。</div>
+        </article>
+        <article class="month-card">
+          <div class="month-name">2027 年 1 月</div>
+          <div class="month-value">400 万</div>
+          <div class="month-desc">春战分配任务，要求先完成 100%。</div>
+        </article>
+        <article class="month-card floor">
+          <div class="month-name">2027 年 2 月</div>
+          <div class="month-value">保底 186 · 冲刺 370</div>
+          <div class="month-desc">保底占 2 月分配任务 50.27%；全额完成则春战达成 100%。</div>
+        </article>
+      </div>
+      <div class="charts-grid">
+        <article class="chart-card">
+          <h3 class="chart-title">累计出库推进路径</h3>
+          <p class="chart-sub">单位：万元；从阶段任务累计到春战总目标</p>
+          <svg class="chart-svg" viewBox="0 0 760 310" role="img" aria-label="B方案累计出库推进折线图">
+            <g stroke="#e1e8ef" stroke-width="1">
+              <path d="M70 70H700"/><path d="M70 115H700"/><path d="M70 160H700"/><path d="M70 205H700"/><path d="M70 250H700"/>
+            </g>
+            <g fill="#728193" font-size="11" text-anchor="end">
+              <text x="58" y="74">920</text><text x="58" y="119">690</text><text x="58" y="164">460</text><text x="58" y="209">230</text><text x="58" y="254">0</text>
+            </g>
+            <polyline points="120,220.7 300,142.4 480,106.0 660,70.0" fill="none" stroke="#0f766e" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M120 250V220.7H300V142.4H480V106H660V70H660V250Z" fill="#0f766e" opacity=".06"/>
+            <g fill="#17324d" stroke="#fff" stroke-width="3">
+              <circle cx="120" cy="220.7" r="7"/><circle cx="300" cy="142.4" r="7"/><circle cx="480" cy="106" r="7"/><circle cx="660" cy="70" r="7"/>
+            </g>
+            <g fill="#17324d" font-size="12" font-weight="700" text-anchor="middle">
+              <text x="120" y="207">150</text><text x="300" y="129">550</text><text x="480" y="92">736</text><text x="660" y="55">920</text>
+            </g>
+            <g fill="#5f6f80" font-size="11" text-anchor="middle">
+              <text x="120" y="278">完成 12 月</text><text x="300" y="278">完成 12—1 月</text><text x="480" y="278">2 月保底</text><text x="660" y="278">2 月冲刺</text>
+            </g>
+            <g fill="#0f766e" font-size="10" text-anchor="middle">
+              <text x="120" y="294">16.3%</text><text x="300" y="294">59.8%</text><text x="480" y="294">80.0%</text><text x="660" y="294">100%</text>
+            </g>
+          </svg>
+        </article>
+        <article class="chart-card">
+          <h3 class="chart-title">费用双基数判定</h3>
+          <p class="chart-sub">基础费用均为 49.7504 万；竖线表示对应基数的 6% 上限</p>
+          <div class="basis-list">
+            <div class="basis">
+              <div class="basis-top"><span class="basis-name">任务基数 · 920 万</span><span class="basis-rate ok">5.4077%</span></div>
+              <div class="basis-track"><div class="basis-fill" style="width:90.13%"></div><span class="basis-cap" style="left:100%"></span></div>
+              <div class="basis-meta"><span>费用 49.7504 万</span><span>6% 上限 55.20 万</span></div>
+            </div>
+            <div class="basis">
+              <div class="basis-top"><span class="basis-name">80% 实际基数 · 736 万</span><span class="basis-rate warn">6.7596%</span></div>
+              <div class="basis-track"><div class="basis-fill warn" style="width:100%"></div><span class="basis-cap" style="left:88.8%"></span></div>
+              <div class="basis-meta"><span>费用超 44.16 万上限 5.5904 万</span><span>压力口径</span></div>
+            </div>
+            <div class="basis" style="background:var(--red-soft);border-color:#f3b7b0">
+              <div class="basis-top"><span class="basis-name">实际基数守住 6% 的最低出库</span><span class="basis-rate warn">829.1733 万</span></div>
+              <div class="basis-meta"><span>相当于春战任务 90.13%</span><span>低于此线将超过 6%</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ownership">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Ownership</div>
+          <h2>销售经理任务拆解</h2>
+          <p class="section-desc">两位销售经理合计 920 万，占比与月度分配均与区域总任务一致。</p>
+        </div>
+        <span class="verdict ok">任务合计已对平</span>
+      </div>
+      <div class="manager-grid">
+        <article class="manager-card">
+          <div class="manager-head"><div style="display:flex;gap:11px;align-items:center"><div class="avatar">吴</div><div><div class="manager-name">吴伟达</div><div class="kpi-note">春战任务占区域 92.2%</div></div></div><span class="manager-share">847.8 万</span></div>
+          <div class="manager-values">
+            <div class="m-val"><b>136</b><span>12 月春战</span></div><div class="m-val"><b>375</b><span>1 月春战</span></div><div class="m-val"><b>336.8</b><span>2 月春战</span></div><div class="m-val"><b>511</b><span>12—1 月硬任务</span></div>
+          </div>
+        </article>
+        <article class="manager-card">
+          <div class="manager-head"><div style="display:flex;gap:11px;align-items:center"><div class="avatar" style="background:var(--teal)">龙</div><div><div class="manager-name">龙碧霞</div><div class="kpi-note">春战任务占区域 7.8%</div></div></div><span class="manager-share">72.2 万</span></div>
+          <div class="manager-values">
+            <div class="m-val"><b>14</b><span>12 月春战</span></div><div class="m-val"><b>25</b><span>1 月春战</span></div><div class="m-val"><b>33.2</b><span>2 月春战</span></div><div class="m-val"><b>39</b><span>12—1 月硬任务</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="policy">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Policy Rules</div>
+          <h2>已确认口径</h2>
+          <p class="section-desc">本次测算只使用提供的 2027 春战政策工作簿及已确认规则。</p>
+        </div>
+      </div>
+      <div class="assumptions">
+        <div class="assumption"><span>年度任务</span><strong>2,357 万元</strong></div>
+        <div class="assumption"><span>5% 返利基数</span><strong>春战任务 920 万</strong></div>
+        <div class="assumption"><span>6% 上限基数</span><strong>任务 920 万</strong></div>
+        <div class="assumption"><span>80% 压力基数</span><strong>实际出库 736 万</strong></div>
+        <div class="assumption"><span>赠品金额</span><strong>物料成本 ¥37,504</strong></div>
+        <div class="assumption"><span>回款截止</span><strong>2026-12-31</strong></div>
+        <div class="assumption"><span>业绩时间</span><strong>销售出库／退货单据时间</strong></div>
+        <div class="assumption"><span>个性化附加项</span><strong>吉彩激励 ¥16,500 单列</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="exec">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Executive Readout</div>
+          <h2>先看结论，再看过程</h2>
+          <p class="section-desc">官方费用判定与 80% 压力分析同时展示，避免将两个基数混为同一结论。</p>
+        </div>
+        <span class="verdict ok">按任务基数：费用合规</span>
+      </div>
+      <div class="insight-grid">
+        <div class="insights">
+          <div class="insight"><span class="insight-no">01</span><div><strong>任务基数下仍有 5.4496 万空间</strong><p>费用合计 49.7504 万，低于 920 万 × 6% 的 55.20 万上限。</p></div></div>
+          <div class="insight"><span class="insight-no">02</span><div><strong>80% 情景费用率升至 6.7596%</strong><p>若实际出库只有 736 万，相对 736 万 × 6% 上限超出 5.5904 万，这是达成压力，不是任务基数合规判定。</p></div></div>
+          <div class="insight"><span class="insight-no">03</span><div><strong>守住实际 6% 的费用率需要达到 90.13%</strong><p>最低出库阈值为 829.1733 万；低于 80% 时还可能触发回款返利扣回。</p></div></div>
+          <div class="insight"><span class="insight-no">04</span><div><strong>2 月不把保底硬摊到个人</strong><p>销售经理先锁定 12—1 月任务，2 月按客户个性化分案和区域推进节奏滚动确认。</p></div></div>
+        </div>
+        <aside class="verdict-panel">
+          <h3>双基数结论</h3>
+          <p>任务基数用于正式费用判定；实际出库基数用于识别经营风险。</p>
+          <div class="big-status">5.41%</div>
+          <p>任务基数费用率</p>
+          <div class="mini-divider"></div>
+          <div class="big-status" style="color:var(--red)">6.76%</div>
+          <p>80% 实际出库费用率</p>
+          <div class="mini-divider"></div>
+          <p><strong style="color:var(--navy)">建议表述：</strong>按已确认任务基数，费用合规；若只完成 80%，费用率将承压，需要争取更高的实际出库。</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer>
+    本页用于桂北区域 2027 春战政策汇报与内部业务沟通。费用判定以已确认的 920 万任务基数为准；736 万实际出库口径仅作 80% 达成压力分析。返利扣回金额需在实际核销时按政策公式计算。
+  </footer>
+  <div class="toast" id="toast">已复制页面链接</div>
+</body>
+</html>
